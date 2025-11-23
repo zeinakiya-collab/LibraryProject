@@ -1,0 +1,142 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RoomReserve"
+        android:background="#00677F"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- BOX 1 -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/normal_border"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweather_light"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="DISCUSSION ROOM 1"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/B1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reserve"
+                    android:layout_gravity="bottom|end" />
+            </FrameLayout>
+
+            <!-- BOX 2 -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/normal_border"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweather_light"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="DISCUSSION ROOM 2"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/B2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reserve"
+                    android:layout_gravity="bottom|end" />
+            </FrameLayout>
+
+            <!-- BOX 3 -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/normal_border"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweather_light"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="DISCUSSION ROOM 3"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/B3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reserve"
+                    android:layout_gravity="bottom|end" />
+            </FrameLayout>
+
+            <!-- BOX 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:background="@drawable/normal_border"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweather_light"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Coming Soon..."
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- BOX 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:background="@drawable/normal_border"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweather_light"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Coming Soon..."
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 🔥 BUTTON OUTSIDE THE SCROLLVIEW  -->
+    <Button
+        android:id="@+id/Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"/>
+
+</FrameLayout>
